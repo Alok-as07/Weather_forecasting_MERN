@@ -39,4 +39,4 @@ app.get('/about' , (req , res)=>{
 // }
 // fetchweather();
 
-app.listen(port,console.log("server run at ",port))
+app.listen(process.env.PORT,console.log("server run at ",port))
