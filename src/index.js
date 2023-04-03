@@ -1,7 +1,7 @@
 const express= require('express');
 const app=express();
 const path = require("path");
-const port = process.env.PORT || 000;
+const port = process.env.PORT || 8000;
 const hbs = require('hbs');
 const weatherService = require("../public/weatherService");
 const getFormattedWeatherData = weatherService.getFormattedWeatherData;  
@@ -39,4 +39,4 @@ app.get('/about' , (req , res)=>{
 // }
 // fetchweather();
 
-app.listen(process.env.PORT,console.log("server run at ",port))
+app.listen(port,console.log("server run at ",port))
